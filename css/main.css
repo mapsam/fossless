@@ -1,0 +1,193 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,600,300);
+.transition-5s {
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+body,
+html,
+*,
+h1,
+h2,
+h3,
+p,
+p a,
+a,
+ul li,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', arial, sans-serif;
+}
+body {
+  font-size: 1.0em;
+  background-color: #f6f6f6;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+}
+nav ul,
+nav ul li {
+  display: inline;
+}
+nav {
+  background-color: #333;
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  overflow: hidden;
+  color: #e5e5e5;
+  border-top: 10px solid #41B6C4;
+  border-bottom: 4px solid #A1DAB4;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+nav img {
+  position: relative;
+  vertical-align: middle;
+  padding-left: 20px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+nav ul {
+  margin-left: 30px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+nav ul li a {
+  font-size: 0.75em;
+  padding: 6px 12px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  border-radius: 10px;
+  font-weight: 600;
+}
+nav ul li a:hover {
+  background-color: #444;
+}
+.featured-menu-item {
+  background-color: #F38630;
+}
+.featured-menu-item:hover {
+  background-color: #FA6900 !important;
+}
+/* Globals */
+section {
+  display: block;
+  width: 100%;
+}
+#main {
+  padding-top: 100px;
+}
+.container {
+  margin: auto;
+  width: 960px;
+}
+#main section {
+  padding: 40px 0 50px;
+  border-bottom: 1px solid #e5e5e5;
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 30%, #f6f6f6 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #ffffff), color-stop(100%, #f6f6f6));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ffffff 30%, #f6f6f6 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ffffff 30%, #f6f6f6 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ffffff 30%, #f6f6f6 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #ffffff 30%, #f6f6f6 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=0);
+  /* IE6-9 */
+}
+/* Clearfix - for those rootbeer floats */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}
+/* Sidebar - Table of Contents */
+aside {
+  float: left;
+  display: block;
+  width: 20%;
+  margin: 0;
+  min-height: 100px;
+}
+aside #pageNav {
+  top: 150px;
+  position: fixed;
+}
+aside ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 175px;
+  display: list-item;
+}
+aside ol li {
+  padding: 0;
+  width: 175px;
+  margin: 0 0 10px 0;
+  float: left;
+  display: block;
+}
+aside ol li a {
+  font-size: 0.8em;
+  color: #2C7FB8;
+}
+aside ol li a:hover {
+  color: #253494;
+}
+.active a {
+  color: #333;
+  font-weight: 600;
+}
+/* Page */
+.content {
+  float: right;
+  width: 80%;
+  z-index: 1 !important;
+}
+/* Homepage */
+section#intro {
+  height: 300px;
+  padding-top: 100px;
+  background-color: #fff;
+  border-bottom: 1px solid #c0c0c0;
+}
+#intro h1 {
+  font-weight: 900;
+  font-size: 6em;
+  color: #333;
+}
+#intro h1 span {
+  font-weight: 100;
+}
