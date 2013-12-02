@@ -1,3 +1,5 @@
+@import "mixins.less";
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,600,300);
 body, html, *, h1, h2, h3, p, p a, a, ul li, ul, li {
     margin:0;
@@ -12,7 +14,6 @@ a {
     text-decoration:none;
     color:inherit;
 }
-
 
 /* Header */
 header {
@@ -32,29 +33,17 @@ nav {
     color:#e5e5e5;
     border-top:10px solid #41B6C4;
     border-bottom:4px solid #A1DAB4;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;
+    .transition-5s
 }
 nav img {
     position:relative;
     vertical-align:middle;
     padding-left:20px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;
+    .transition-5s
 }
 nav ul {
     margin-left:30px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;
+    .transition-5s
 }
 nav ul li a {
     font-size:0.75em;
