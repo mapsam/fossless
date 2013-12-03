@@ -21,10 +21,6 @@ header {
     position:fixed;
     width:100%;
 }
-nav ul, nav ul li {
-    display:inline;
-}
-
 nav {
     background-color:#333;
     display:block;
@@ -34,28 +30,32 @@ nav {
     color:#e5e5e5;
     border-top:10px solid #41B6C4;
     border-bottom:4px solid #A1DAB4;
-    .transition-5s
-}
-nav img {
-    position:relative;
-    vertical-align:middle;
-    padding-left:20px;
-    .transition-5s
-}
-nav ul {
-    margin-left:30px;
-    .transition-5s
-}
-nav ul li a {
-    font-size:0.75em;
-    padding:6px 12px;
-    text-transform:uppercase;
-    letter-spacing:.2em;
-    border-radius:10px;
-    font-weight:600;
-}
-nav ul li a:hover {
-    background-color:#444;
+    .transition(.5s);
+	img {
+		position:relative;
+		vertical-align:middle;
+		padding-left:20px;
+		.transition(.5s);
+	}
+	ul, ul li {
+		display:inline;
+	}
+	ul {
+		margin-left:30px;
+		.transition(.5s);
+		li a {
+			font-size:0.75em;
+			padding:6px 12px;
+			text-transform:uppercase;
+			letter-spacing:.2em;
+			border-radius:10px;
+			font-weight:600;
+			&:hover {
+				background-color:#444;
+			}
+		}
+		
+	}
 }
 .featured-menu-item {
     background-color:#F38630;
