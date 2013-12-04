@@ -126,7 +126,11 @@ section {
 .cf {
   *zoom: 1;
 }
-/* Sidebar - Table of Contents */
+/* 
+**
+**  Sidebar - Table of Contents 
+**
+*/
 aside {
   float: left;
   display: block;
@@ -154,13 +158,13 @@ aside ol li {
 }
 aside ol li a {
   font-size: 0.8em;
-  color: #2C7FB8;
+  color: #2c7fb8;
 }
 aside ol li a:hover {
   color: #253494;
 }
-.active a {
-  color: #333;
+aside ol li.active a {
+  color: #333333;
   font-weight: 600;
 }
 /* Page */

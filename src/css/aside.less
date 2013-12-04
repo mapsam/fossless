@@ -1,0 +1,46 @@
+/* 
+**
+**  Sidebar - Table of Contents 
+**
+*/
+aside {
+    float:left;
+    display:block;
+    width:20%;
+    margin:0;
+    min-height:100px;
+
+    #pageNav {
+        top:150px;
+        position:fixed;
+    }
+    
+    ol {
+        list-style-type: none;
+        padding:0;
+        margin:0;
+        width:175px;
+        display:list-item;
+
+        li {
+            padding:0;
+            width:175px;
+            margin:0 0 10px 0;
+            float:left;
+            display:block;
+
+            a {
+                font-size:0.8em;
+                color: @color-links;
+                &:hover {
+                    color: @color-link_hover;
+                }
+            }
+
+            &.active a {
+                color: @color-link_active;
+                font-weight:600;
+            }
+        }
+    }
+}

@@ -102,43 +102,7 @@ section {
     *zoom:1;
 }
 
-/* Sidebar - Table of Contents */
-aside {
-    float:left;
-    display:block;
-    width:20%;
-    margin:0;
-    min-height:100px;
-}
-aside #pageNav {
-    top:150px;
-    position:fixed;
-}
-aside ol {
-    list-style-type: none;
-    padding:0;
-    margin:0;
-    width:175px;
-    display:list-item;
-}
-aside ol li {
-    padding:0;
-    width:175px;
-    margin:0 0 10px 0;
-    float:left;
-    display:block;
-}
-aside ol li a {
-    font-size:0.8em;
-    color:#2C7FB8;
-}
-aside ol li a:hover {
-    color:#253494;
-}
-.active a {
-    color:#333;
-    font-weight:600;
-}
+@import "aside.less";
 
 /* Page */
 .content {
