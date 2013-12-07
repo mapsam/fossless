@@ -1,61 +1,8 @@
 @import "mixins.less";
 @import "variables.less";
-
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,600,300);
-body, html, *, h1, h2, h3, p, p a, a, ul li, ul, li {
-    margin:0;
-    padding:0;
-    font-family:'Open Sans', arial, sans-serif;
-}
-body {
-    font-size:1.0em;
-    background-color:#f6f6f6;
-}
-a {
-    text-decoration:none;
-    color:inherit;
-}
-
-@import "nav.less";
-
-/* Globals */
-section {
-    display:block;
-    width:100%;
-}
-#main {
-    padding-top:100px;
-}
-.container {
-    margin:auto;
-    width:960px;
-}
-#main section {
-    padding:40px 0 50px;
-    border-bottom:1px solid #e5e5e5;
-    background: #ffffff; /* Old browsers */
-    background: -moz-linear-gradient(top, #ffffff 30%, #f6f6f6 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#ffffff), color-stop(100%,#f6f6f6)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #ffffff 30%,#f6f6f6 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #ffffff 30%,#f6f6f6 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #ffffff 30%,#f6f6f6 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #ffffff 30%,#f6f6f6 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
-}
-
-/* Clearfix - for those rootbeer floats */
-.cf:before,
-.cf:after {
-    content:" ";
-    display:table;
-}
-.cf:after {
-    clear:both;
-}
-.cf {
-    *zoom:1;
-}
-
+@import "fonts.less";
+@import "globals.less";
+@import "header.less";
 @import "aside.less";
 
 /* Page */
@@ -65,20 +12,6 @@ section {
     z-index:1 !important
 }
 
-/* Homepage */
-section#intro {
-    height:300px;
-    padding-top:100px;
-    background-color:#fff;
-    border-bottom:1px solid #c0c0c0;
-}
-#intro h1 {
-    font-weight:900;
-    font-size:6em;
-    color:#333;
-}
-#intro h1 span {
-    font-weight:100;
-}
+@import "homepage.less";
 
 
