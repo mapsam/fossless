@@ -1,0 +1,52 @@
+/* 
+*
+* Header & Nav 
+*
+*/
+header {
+    position:fixed;
+    width:100%;
+}
+nav {
+    background-color:#333;
+    display:block;
+    width:100%;
+    padding:20px 0;
+    overflow:hidden;
+    color:#e5e5e5;
+    border-top:10px solid #41B6C4;
+    border-bottom:4px solid #A1DAB4;
+    .transition(.5s);
+	img {
+		position:relative;
+		vertical-align:middle;
+		padding-left:20px;
+		.transition(.5s);
+	}
+	ul {
+		margin-left:30px;
+        display:inline;
+		.transition(.5s);
+        li { 
+            display:inline;
+            a {
+    			font-size:0.75em;
+    			padding:6px 12px;
+    			text-transform:uppercase;
+    			letter-spacing:.2em;
+    			border-radius:10px;
+    			font-weight:600;
+    			&:hover {
+    				background-color:#444;
+    			}
+            }
+		}
+		
+	}
+}
+.featured-menu-item {
+    background-color:#F38630;
+}
+.featured-menu-item:hover {
+    background-color:#FA6900 !important;
+}
