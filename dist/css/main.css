@@ -3,6 +3,14 @@
   display: block;
   margin: auto;
 }
+.standard-landing-paragraph {
+  font-weight: 300;
+  font-size: .9em;
+}
+.standard-landing-paragraph-bold {
+  font-weight: 600;
+  font-size: 1.1em;
+}
 /* base colors */
 /* Spec Colors */
 /* Links */
@@ -81,12 +89,60 @@ section {
 }
 #highlights p {
   font-weight: 600;
+  font-size: 1.1em;
 }
 #highlights p .date {
   font-weight: 300;
 }
 #highlights button {
   margin-right: 10px;
+}
+#sponsors {
+  padding: 20px 0 40px;
+  text-align: center;
+}
+#sponsors p {
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+#sponsors .carousel carousel-inner {
+  width: 100%;
+}
+#sponsors .carousel carousel-inner .sponsor-list {
+  text-align: center;
+}
+#sponsors .carousel .carousel-indicators {
+  bottom: -40px;
+}
+#sponsors .carousel .carousel-indicators li {
+  background-color: #70dbdb;
+  border-color: #70dbdb;
+  border-radius: none;
+}
+#featured-speakers .speaker {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+#featured-speakers .speaker .speaker-photo-container {
+  overflow: hidden;
+  border-radius: 100px;
+  border: 10px solid #fcfaf3;
+}
+#featured-speakers .speaker h2 {
+  margin: 2px 0 0;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: #db6f6f;
+}
+#featured-speakers .speaker h2 small {
+  font-size: 0.7em;
+  font-weight: 400;
+  text-transform: none;
+}
+#featured-speakers .speaker p {
+  font-weight: 300;
+  font-size: .9em;
 }
 /* Content */
 body {

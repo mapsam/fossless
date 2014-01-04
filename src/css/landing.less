@@ -17,12 +17,63 @@ section {
 	background-color:@c_med;
 	padding:20px 0;
 	p {
-		font-weight:600;
+		.standard-landing-paragraph-bold();
 		.date {
 			font-weight:300;
 		}
 	}
 	button {
 		margin-right:10px;
+	}
+}
+
+#sponsors {
+	padding:20px 0 40px;
+	p {
+		.standard-landing-paragraph-bold();
+		margin-bottom:20px;
+	}
+	text-align:center;
+	.carousel {
+		carousel-inner {
+			width:100%;
+			.sponsor-list {
+				text-align:center;
+			}
+		}
+		.carousel-indicators {
+			bottom:-40px;
+			li {
+				background-color:@c_blue;
+				border-color:@c_blue;
+				border-radius:none;
+			}
+		}
+	}
+}
+
+#featured-speakers {
+	.speaker {
+		margin-bottom:10px;
+		padding:10px;
+		.speaker-photo-container {
+			overflow:hidden;
+			border-radius:100px;
+			border:10px solid @c_light;
+		}
+		h2 {
+			margin:2px 0 0;
+			text-transform:uppercase;
+			font-size:1.5em;
+			color:@c_red;
+			small {
+				font-size:0.7em;
+				font-weight:400;
+				text-transform:none;
+			}
+		}
+		p {
+			.standard-landing-paragraph();
+		}
 	}
 }
