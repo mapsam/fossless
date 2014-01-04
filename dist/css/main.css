@@ -53,6 +53,9 @@
   background-color: #ddd7c4 !important;
   border-bottom: 2px solid #ff9393 !important;
 }
+.navbar-brand {
+  padding: 5px 10px !important;
+}
 /* Landing Page Specific CSS */
 section {
   display: block;
