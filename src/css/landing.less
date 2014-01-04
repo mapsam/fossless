@@ -15,7 +15,14 @@ section {
 
 #highlights {
 	background-color:@c_med;
-	padding:20px 0;
+	text-align:center;
+	.col-sm-4 {
+		padding:20px 0;
+		&:nth-child(2) {
+			border-right:1px dotted @c_med_third;
+			border-left:1px dotted @c_med_third;
+		}
+	}
 	p {
 		.standard-landing-paragraph-bold();
 		.date {
@@ -59,7 +66,7 @@ section {
 		.speaker-photo-container {
 			overflow:hidden;
 			border-radius:100px;
-			border:10px solid @c_light;
+			border:10px solid @c_med;
 		}
 		h2 {
 			margin:2px 0 0;

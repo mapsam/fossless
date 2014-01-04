@@ -85,7 +85,14 @@ section {
 }
 #highlights {
   background-color: #f2ebdf;
+  text-align: center;
+}
+#highlights .col-sm-4 {
   padding: 20px 0;
+}
+#highlights .col-sm-4:nth-child(2) {
+  border-right: 1px dotted #d6d0c6;
+  border-left: 1px dotted #d6d0c6;
 }
 #highlights p {
   font-weight: 600;
@@ -127,7 +134,7 @@ section {
 #featured-speakers .speaker .speaker-photo-container {
   overflow: hidden;
   border-radius: 100px;
-  border: 10px solid #fcfaf3;
+  border: 10px solid #f2ebdf;
 }
 #featured-speakers .speaker h2 {
   margin: 2px 0 0;
@@ -188,7 +195,7 @@ p a:hover {
 /* Footer */
 footer {
   background-color: #70dbdb;
-  padding: 20px 0 10px;
+  padding: 20px 0 20px;
   border-bottom: 5px solid #65c5c5;
 }
 footer p {
