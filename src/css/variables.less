@@ -1,14 +1,32 @@
-/* your variables */
-
-/* colors */
-
-@c_light: #fcfaf3;
-@c_light_secondary: #fefdfb;
-@c_light_third: #ddd7c4;
-
-@c_red: #ff6666;
-@c_red_secondary: #ff7575;
-@c_red_active: #ff9393;
-@c_blue: #6666ff;
+/* base colors */
+@c_second: #e5e5e5;
+@c_third: #e2e2e2;
 @c_white: #f3f3f3;
-@c_grey: #333333;
+@c_grey: #555;
+@c_red: #db6f6f;
+@c_red_second: multiply(@c_red, @c_second);
+@c_red_active: #ff9393;
+@c_blue: #70DBDB;
+@c_blue_second: multiply(@c_blue, @c_second);
+@c_blue_compliment: #70dbdb;
+@c_sandy: #fcfaf3;
+
+/* Spec Colors */
+@c_light: @c_sandy;
+@c_light_second: multiply(@c_light, @c_second);
+@c_light_third: multiply(@c_light, @c_third);
+
+/* Links */
+@c_link_main: @c_red;
+@c_link_hover: @c_red_second;
+
+/* Nav Colors */
+@c_navlink_main: @c_red;
+@c_navlink_hover: @c_red_second;
+@c_navlink_active: @c_light_third;
+
+
+
+
+
+

@@ -1,9 +1,12 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 .center-block {
   display: block;
   margin: auto;
 }
-/* your variables */
-/* colors */
+/* base colors */
+/* Spec Colors */
+/* Links */
+/* Nav Colors */
 .navbar {
   border: none;
 }
@@ -13,32 +16,33 @@
 .navbar .collapse .nav li .active a,
 .navbar .collapse .navbar-nav li .active a {
   border-bottom: 2px solid #ff9393;
-  color: #ff6666;
+  color: #db6f6f;
 }
 .navbar .collapse .nav li a,
 .navbar .collapse .navbar-nav li a {
   padding: 15px 7px;
   margin: 0 5px;
-  color: #ff6666;
+  color: #db6f6f;
 }
 .navbar .collapse .nav li a:hover,
 .navbar .collapse .navbar-nav li a:hover {
-  color: #ff7575;
-  background-color: #fefdfb;
-  border-bottom: 2px solid #ff7575;
+  color: #c56464;
+  background-color: #e2e1da;
+  border-bottom: 2px solid #c56464;
 }
 .navbar .collapse .nav li ul,
 .navbar .collapse .navbar-nav li ul {
-  background-color: #fefdfb;
+  background-color: #e2e1da;
 }
 .navbar .collapse .nav li ul li a,
 .navbar .collapse .navbar-nav li ul li a {
   margin: 0;
+  padding: 3px 7px;
 }
 .navbar .collapse .nav li ul li a:hover,
 .navbar .collapse .navbar-nav li ul li a:hover {
   background-color: #fcfaf3;
-  color: #ff7575;
+  color: #c56464;
   border: none;
 }
 .navbar-nav.navbar-right:last-child {
@@ -49,8 +53,8 @@
 .navbar-default .navbar-nav > .active > a:focus,
 .open > a,
 .open > a.dropdown {
-  color: #ff6666 !important;
-  background-color: #ddd7c4 !important;
+  color: #db6f6f !important;
+  background-color: #dfded7 !important;
   border-bottom: 2px solid #ff9393 !important;
 }
 .navbar-brand {
@@ -70,4 +74,20 @@ section {
 #landing-intro img {
   display: block;
   margin: auto;
+}
+/* Footer */
+footer {
+  background-color: #70dbdb;
+  padding: 20px 0 10px;
+  border-bottom: 5px solid #65c5c5;
+}
+footer p {
+  margin-bottom: .1em;
+}
+footer p a {
+  color: #db6f6f;
+  text-decoration: none;
+}
+footer p a:hover {
+  text-decoration: underline;
 }
