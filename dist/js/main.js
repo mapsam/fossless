@@ -38,17 +38,12 @@ function init() {
 			.end().filter('[href=#'+id+']').parent().addClass('active');
 
 		// updates header sizing
-		var resizeHeight = $('#main section').eq(0).outerHeight();
 		var scroll = $(window).scrollTop();
-		if ( scroll < resizeHeight-50 ) {
-			$('nav').css({'padding': '20px 0', 'border-top': '10px solid #41B6C4'});
-			$('nav img').css({'margin-right': '0px'});
-			$('nav img').width(60);
+		if ( scroll < 2 ) {
+			$('nav').css("opacity", 0.5);
 		}
 		else {
-			$('nav').css({'padding': '5px 0', 'border-top': '0px solid #41B6C4'});
-			$('nav img').css({'margin': '0 10px 0 10px'});
-			$('nav img').width(40);
+			$('nav').css("opacity", 1.0);
 		}
 
 		

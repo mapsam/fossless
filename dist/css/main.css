@@ -17,8 +17,8 @@
 }
 .navbar .collapse .nav li a,
 .navbar .collapse .navbar-nav li a {
-  padding: 10px 7px;
-  margin: 5px;
+  padding: 15px 7px;
+  margin: 0 5px;
   color: #ff6666;
 }
 .navbar .collapse .nav li a:hover,
