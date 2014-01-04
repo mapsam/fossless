@@ -159,33 +159,32 @@ section {
   background-color: #eafafa;
   padding: 20px 0;
 }
-#landing-posts .landing-post {
-  display: block;
-  margin-bottom: 20px;
-}
-#landing-posts .landing-post-date p {
-  margin: 0;
-  padding: 2px 6px;
-  background-color: #70dbdb;
-  color: #555555;
-  font-weight: 100;
-  font-size: .8em;
-  text-transform: uppercase;
-  border-radius: 4px;
-  white-space: normal;
-}
-#landing-posts .landing-post-content p {
+#landing-posts .landing-post-meta {
+  padding: 0;
   margin-bottom: 10px;
+  border-bottom: 1px solid #70dbdb;
 }
-#landing-posts .landing-post-content h1 {
+#landing-posts .landing-post-meta h1 {
   margin: 0 0 5px;
   font-size: 2em;
 }
-#landing-posts .landing-post-content h3 {
+#landing-posts .landing-post-meta h2 {
   margin: 0 0 5px;
   font-size: .8em;
   text-transform: uppercase;
   color: #4682b4;
+}
+#landing-posts .landing-post-meta h2 span {
+  margin: 0 0 0 10px;
+  color: #555555;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+#landing-posts .landing-post-content {
+  margin-bottom: 30px;
+}
+#landing-posts .landing-post-content p {
+  margin-bottom: 10px;
 }
 /* Content */
 body {

@@ -92,36 +92,31 @@ section {
 	padding:20px 0;
 }
 #landing-posts {
-	.landing-post {
-		display:block;
-		margin-bottom:20px;
-	}
-	.landing-post-date {
-		p {
-			margin:0;
-			padding:2px 6px;
-			background-color:@c_blue;
-			color:@c_grey;
-			font-weight:100;
-			font-size:.8em;
-			text-transform:uppercase;
-			border-radius:4px;
-			white-space:normal;
-		}
-	}
-	.landing-post-content {
-		p {
-			margin-bottom:10px;
-		}
+	.landing-post-meta {
+		padding:0;
+		margin-bottom:10px;
+		border-bottom:1px solid @c_blue;
 		h1 {
 			margin:0 0 5px;
 			font-size:2em;
 		}
-		h3 {
+		h2 {
 			margin:0 0 5px;
 			font-size:.8em;
 			text-transform:uppercase;
 			color:@c_blue_dark;
+			span {
+				margin:0 0 0 10px;
+				color:@c_grey;
+				font-weight:300;
+				text-transform:uppercase;
+			}
+		}
+	}
+	.landing-post-content {
+		margin-bottom:30px;
+		p {
+			margin-bottom:10px;
 		}
 	}
 }
