@@ -127,6 +127,9 @@ section {
   border-color: #70dbdb;
   border-radius: none;
 }
+#featured-speakers {
+  padding: 20px 0;
+}
 #featured-speakers .speaker {
   margin-bottom: 10px;
   padding: 10px;
@@ -134,7 +137,7 @@ section {
 #featured-speakers .speaker .speaker-photo-container {
   overflow: hidden;
   border-radius: 100px;
-  border: 10px solid #f2ebdf;
+  border: 5px solid #fff;
 }
 #featured-speakers .speaker h2 {
   margin: 2px 0 0;
@@ -142,14 +145,47 @@ section {
   font-size: 1.5em;
   color: #db6f6f;
 }
-#featured-speakers .speaker h2 small {
-  font-size: 0.7em;
+#featured-speakers .speaker h3 {
+  margin: 0;
+  font-size: 1em;
   font-weight: 400;
   text-transform: none;
 }
 #featured-speakers .speaker p {
   font-weight: 300;
   font-size: .9em;
+}
+#recent {
+  background-color: #eafafa;
+  padding: 20px 0;
+}
+#landing-posts .landing-post {
+  display: block;
+  margin-bottom: 20px;
+}
+#landing-posts .landing-post-date p {
+  margin: 0;
+  padding: 2px 6px;
+  background-color: #70dbdb;
+  color: #555555;
+  font-weight: 100;
+  font-size: .8em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  white-space: normal;
+}
+#landing-posts .landing-post-content p {
+  margin-bottom: 10px;
+}
+#landing-posts .landing-post-content h1 {
+  margin: 0 0 5px;
+  font-size: 2em;
+}
+#landing-posts .landing-post-content h3 {
+  margin: 0 0 5px;
+  font-size: .8em;
+  text-transform: uppercase;
+  color: #4682b4;
 }
 /* Content */
 body {
