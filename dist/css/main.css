@@ -7,6 +7,7 @@
 /* Spec Colors */
 /* Links */
 /* Nav Colors */
+/* Nav */
 .navbar {
   border: none;
 }
@@ -15,20 +16,19 @@
 }
 .navbar .collapse .nav li .active a,
 .navbar .collapse .navbar-nav li .active a {
-  border-bottom: 2px solid #ff9393;
-  color: #db6f6f;
+  border-bottom: 2px solid #63c2c2;
+  color: #70dbdb;
 }
 .navbar .collapse .nav li a,
 .navbar .collapse .navbar-nav li a {
   padding: 15px 7px;
   margin: 0 5px;
-  color: #db6f6f;
+  color: #4682b4;
 }
 .navbar .collapse .nav li a:hover,
 .navbar .collapse .navbar-nav li a:hover {
-  color: #c56464;
   background-color: #e2e1da;
-  border-bottom: 2px solid #c56464;
+  border-bottom: 2px solid #63c2c2;
 }
 .navbar .collapse .nav li ul,
 .navbar .collapse .navbar-nav li ul {
@@ -41,8 +41,8 @@
 }
 .navbar .collapse .nav li ul li a:hover,
 .navbar .collapse .navbar-nav li ul li a:hover {
-  background-color: #fcfaf3;
-  color: #c56464;
+  background-color: #70dbdb;
+  color: #4682b4;
   border: none;
 }
 .navbar-nav.navbar-right:last-child {
@@ -53,9 +53,9 @@
 .navbar-default .navbar-nav > .active > a:focus,
 .open > a,
 .open > a.dropdown {
-  color: #db6f6f !important;
-  background-color: #dfded7 !important;
-  border-bottom: 2px solid #ff9393 !important;
+  color: #4682b4 !important;
+  background-color: #70dbdb !important;
+  border-bottom: 2px solid #4682b4 !important;
 }
 .navbar-brand {
   padding: 5px 10px !important;
@@ -74,6 +74,60 @@ section {
 #landing-intro img {
   display: block;
   margin: auto;
+}
+#highlights {
+  background-color: #f2ebdf;
+  padding: 20px 0;
+}
+#highlights p {
+  font-weight: 600;
+}
+#highlights p .date {
+  font-weight: 300;
+}
+#highlights button {
+  margin-right: 10px;
+}
+/* Content */
+body {
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+}
+p {
+  font-weight: 400;
+  font-size: .9em;
+  color: #555555;
+  margin: 0;
+}
+p a {
+  color: #db6f6f;
+}
+p a:hover {
+  color: #c56464;
+}
+.btn-default {
+  background-color: #fcfaf3;
+}
+.btn-default:hover {
+  background-color: #e2e1da;
+}
+.btn-primary {
+  background-color: #70dbdb;
+  color: #555555;
+  border: #4682b4;
+}
+.btn-primary:hover {
+  color: #555555;
+  background-color: #65c5c5;
+}
+.btn-alert {
+  background-color: #db6f6f;
+  color: #fcfaf3;
+  border: #c56464;
+}
+.btn-alert:hover {
+  color: #fcfaf3;
+  background-color: #c56464;
+  border: #c26262;
 }
 /* Footer */
 footer {

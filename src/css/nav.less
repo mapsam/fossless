@@ -1,3 +1,5 @@
+nav {
+}
 .navbar {
 	border:none;
 	.collapse {
@@ -6,29 +8,28 @@
 			li {
 				.active {
 					a {
-						border-bottom: 2px solid @c_red_active;
-						color:@c_red;
+						border-bottom: 2px solid @c_blue_third;
+						color:@c_blue;
 					}
 				}
 				a {
 					padding:15px 7px;
 					margin:0 5px;
-					color:@c_red;
+					color:@c_navlink_main;
 					&:hover {
-						color:@c_red_second;
-						background-color:@c_light_second;
-						border-bottom:2px solid @c_red_second;
+						background-color:@c_navlink_bghover;
+						border-bottom:2px solid @c_navlink_borderlight;
 					}
 				}
 				ul {
-					background-color:@c_light_second;
+					background-color:@c_navlink_bghover;
 					li {
 						a {
 							margin:0;
 							padding:3px 7px;
 							&:hover {
-								background-color:@c_light;
-								color:@c_red_second;
+								background-color:@c_navlink_active;
+								color:@c_navlink_borderdark;
 								border:none;
 							}
 						}
@@ -44,9 +45,9 @@
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus, .open>a, .open>a.dropdown {
-	color:@c_red !important;
-	background-color:@c_light_third !important;
-	border-bottom:2px solid @c_red_active !important;
+	color:@c_navlink_main !important;
+	background-color:@c_navlink_active !important;
+	border-bottom:2px solid @c_navlink_borderdark !important;
 }
 
 .navbar-brand {

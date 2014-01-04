@@ -1,25 +1,42 @@
 body {
 	font-family:'Open Sans', helvetica, arial, sans-serif;
-	.outer-container {
-		.container {
-			margin-top:40px;
-		}
-	}
-}
-
-.cms-page {
-	.container {
-		padding-top:50px;
 }
 
 p {
 	font-weight:400;
 	font-size:.9em;
 	color:@c_grey;
+	margin:0;
 	a {
 		color:@c_link_main;
 		&:hover {
 			color:@c_link_hover;
 		}
+	}
+}
+
+.btn-default {
+	background-color:@c_light;
+	&:hover {
+		background-color:@c_light_second;
+	}
+}
+.btn-primary {
+	background-color:@c_blue;
+	color:@c_grey;
+	border:@c_blue_dark;
+	&:hover {
+		color:@c_grey;
+		background-color:@c_blue_second;
+	}
+}
+.btn-alert {
+	background-color:@c_red;
+	color:@c_light;
+	border:@c_red_second;
+	&:hover {
+		color:@c_light;
+		background-color:@c_red_second;
+		border:@c_red_third;
 	}
 }
