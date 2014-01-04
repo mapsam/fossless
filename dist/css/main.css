@@ -1,0 +1,48 @@
+/* your variables */
+.navbar {
+  border-bottom: 4px solid #f3f3f3;
+}
+.navbar .collapse {
+  background-color: #ff6666;
+}
+.navbar .collapse .nav li .active a,
+.navbar .collapse .navbar-nav li .active a {
+  background-color: #ff9393;
+  color: #f3f3f3;
+}
+.navbar .collapse .nav li a,
+.navbar .collapse .navbar-nav li a {
+  color: #f3f3f3;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.navbar .collapse .nav li a .dropdown-toggle,
+.navbar .collapse .navbar-nav li a .dropdown-toggle {
+  border-bottom: 4px solid #f3f3f3;
+}
+.navbar .collapse .nav li a:hover,
+.navbar .collapse .navbar-nav li a:hover {
+  color: #f3f3f3;
+  background-color: #ff7575;
+}
+.navbar .collapse .nav li ul,
+.navbar .collapse .navbar-nav li ul {
+  background-color: #ff7575;
+}
+.navbar .collapse .nav li ul li a:hover,
+.navbar .collapse .navbar-nav li ul li a:hover {
+  background-color: #ff9393;
+  border: none;
+}
+.navbar-nav.navbar-right:last-child {
+  margin: 0;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #f3f3f3;
+  background-color: #ff7575;
+}

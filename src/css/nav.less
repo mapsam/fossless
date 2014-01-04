@@ -1,0 +1,47 @@
+.navbar {
+	border-bottom:4px solid @c_white;
+	.collapse {
+		background-color:@c_red;
+		.nav, .navbar-nav {
+			li {
+				.active {
+					a {
+						background-color:@c_red_active;
+						color:@c_white;
+					}
+				}
+				a {
+					color:@c_white;
+					.dropdown-toggle {
+						border-bottom:4px solid @c_white;
+					}
+					&:hover {
+						color:@c_white;
+						background-color:@c_red_secondary;
+					}
+					.transition(.2s);
+				}
+				ul {
+					background-color:@c_red_secondary;
+					li {
+						a {
+							&:hover {
+								background-color:@c_red_active;
+								border:none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.navbar-nav.navbar-right:last-child {
+	margin:0;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	color:@c_white;
+	background-color:@c_red_secondary;
+}
