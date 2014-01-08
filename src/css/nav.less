@@ -1,37 +1,45 @@
 nav {
+
 }
-.navbar {
+.navbar, .navbar-default {
 	border:none;
+	background-color:@c-nav-light2;
+	border-bottom:1px solid @c-nav;
+	border-top:5px solid @c-blue;
 	.collapse {
-		background-color:@c_light;
+		background-color:@c-nav-light2;
 		.nav, .navbar-nav {
-			li {
-				.active {
-					a {
-						border-bottom: 2px solid @c_blue_third;
-						color:@c_blue;
-					}
-				}
-				a {
-					padding:15px 7px;
-					margin:0 5px;
-					color:@c_navlink_main;
+			.active {
+				a {					
+					color:@c-nav-dark2;
+					background-color:@c-nav-light2;
 					&:hover {
-						background-color:@c_navlink_bghover;
-						border-bottom:2px solid @c_navlink_borderlight;
+						color:@c-nav-dark2;
+						background-color:@c-nav;					
 					}
 				}
-				ul {
-					background-color:@c_navlink_bghover;
-					li {
-						a {
-							margin:0;
-							padding:3px 7px;
-							&:hover {
-								background-color:@c_navlink_active;
-								color:@c_navlink_borderdark;
-								border:none;
-							}
+			}
+			a {
+				padding:17px 7px;
+				margin:0 5px;
+				color:@c-nav-dark2;
+				&:hover {
+					color:@c-nav-dark2;
+					background-color:@c-nav;					
+				}
+				.transition(.2s);
+				.padding-inside;
+			}
+			ul {
+				background-color:@c-nav-light2;
+				li {
+					a {
+						margin:0;
+						padding:3px 7px;
+						&:hover {
+							background-color:@c-nav-dark2;
+							color:@c-nav-light2;
+							border:none;
 						}
 					}
 				}
@@ -45,9 +53,8 @@ nav {
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus, .open>a, .open>a.dropdown {
-	color:@c_navlink_main !important;
-	background-color:@c_navlink_active !important;
-	border-bottom:2px solid @c_navlink_borderdark !important;
+	color:@c-nav-dark2 !important;
+	background-color:@c-nav !important;	
 }
 
 .navbar-brand {

@@ -2,41 +2,47 @@ body {
 	font-family:'Open Sans', helvetica, arial, sans-serif;
 }
 
+.cms-page {
+	.outer-container > .container {
+		margin:50px auto;
+	}
+}
+
 p {
 	font-weight:400;
-	font-size:.9em;
-	color:@c_grey;
+	font-size:1.1em;
+	color:@c-grey;
 	margin:0;
 	a {
-		color:@c_link_main;
+		color:@c-link_main;
 		&:hover {
-			color:@c_link_hover;
+			color:@c-link_hover;
 		}
 	}
 }
 
 .btn-default {
-	background-color:@c_light;
+	background-color:@c-light;
 	&:hover {
-		background-color:@c_light_second;
+		background-color:@c-light_second;
 	}
 }
 .btn-primary {
-	background-color:@c_blue;
-	color:@c_grey;
-	border:@c_blue_dark;
+	background-color:@c-blue;
+	color:@c-grey;
+	border:@c-blue-dark;
 	&:hover {
-		color:@c_grey;
-		background-color:@c_blue_second;
+		color:@c-grey;
+		background-color:@c-blue-dark;
 	}
 }
 .btn-alert {
-	background-color:@c_red;
-	color:@c_light;
-	border:@c_red_second;
+	background-color:@c-red;
+	color:@c-light;
+	border:@c-red-dark;
 	&:hover {
-		color:@c_light;
-		background-color:@c_red_second;
-		border:@c_red_third;
+		color:@c-light;
+		background-color:@c-red-dark;
+		border:@c-red-dark2;
 	}
 }

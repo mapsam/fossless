@@ -6,41 +6,56 @@ section {
 
 #landing-intro {
 	padding:100px 0 50px;
-	background-color:@c_light;
+	background-color:@c-blue-light2;
 	text-align:center;
+	border-bottom:10px solid @c-blue;
 	img {
 		.center-block();
 	}
-}
-
-#highlights {
-	background-color:@c_med;
-	text-align:center;
-	.col-sm-4 {
-		padding:20px 0;
-		&:nth-child(2) {
-			border-right:1px dotted @c_med_third;
-			border-left:1px dotted @c_med_third;
+	#conference-info {
+		text-align:left;
+		margin:90px 0 0;
+		text-align:left;
+		h2 {
+			color:@c-grey-light;
+			font-weight:700;
+			font-size:2.5em;
+			margin-bottom:16px;
 		}
-	}
-	p {
-		.standard-landing-paragraph-bold();
-		.date {
-			font-weight:300;
+		#conference-times {
+			margin-bottom:20px;
+			border-left:5px solid @c-blue;
+			padding-left:10px;
+			p {
+				font-weight:700;
+				color:@c-grey;
+				&.larger {
+					font-size:1.4em;
+				}
+				span {
+					margin-left:10px;
+					font-weight:100;
+					font-style:italic;
+				}
+			}
 		}
-	}
-	button {
-		margin-right:10px;
+		button {
+			margin-right:10px;
+		}
 	}
 }
 
 #sponsors {
 	padding:20px 0 40px;
+	background-color:@c-med;
 	p {
 		.standard-landing-paragraph-bold();
 		margin-bottom:20px;
 	}
 	text-align:center;
+	#sponsor-slider {
+		margin:20px 0 0;
+	}
 	.carousel {
 		carousel-inner {
 			width:100%;
@@ -51,8 +66,8 @@ section {
 		.carousel-indicators {
 			bottom:-40px;
 			li {
-				background-color:@c_blue;
-				border-color:@c_blue;
+				background-color:@c-blue;
+				border-color:@c-blue;
 				border-radius:none;
 			}
 		}
@@ -73,7 +88,7 @@ section {
 			margin:2px 0 0;
 			text-transform:uppercase;
 			font-size:1.5em;
-			color:@c_red;
+			color:@c-red;
 		}
 		h3 {
 			margin:0;
@@ -88,14 +103,14 @@ section {
 }
 
 #recent {
-	background-color:lighten(@c_blue, 30%);
+	background-color:lighten(@c-blue, 30%);
 	padding:20px 0;
 }
 #landing-posts {
 	.landing-post-meta {
 		padding:0;
 		margin-bottom:10px;
-		border-bottom:1px solid @c_blue;
+		border-bottom:1px solid @c-blue;
 		h1 {
 			margin:0 0 5px;
 			font-size:2em;
@@ -104,10 +119,10 @@ section {
 			margin:0 0 5px;
 			font-size:.8em;
 			text-transform:uppercase;
-			color:@c_blue_dark;
+			color:@c-blue-dark;
 			span {
 				margin:0 0 0 10px;
-				color:@c_grey;
+				color:@c-grey;
 				font-weight:300;
 				text-transform:uppercase;
 			}

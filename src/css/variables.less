@@ -1,39 +1,45 @@
 /* base colors */
-@c_second: #e5e5e5;
-@c_third: #e2e2e2;
-@c_white: #f3f3f3;
-@c_grey: #555;
-@c_red: #db6f6f;
-@c_red_second: multiply(@c_red, @c_second);
-@c_red_third: multiply(@c_red, @c_third);
-@c_red_active: #ff9393;
-@c_blue: #70DBDB;
-@c_blue_second: multiply(@c_blue, @c_second);
-@c_blue_third: multiply(@c_blue, @c_third);
-@c_blue_dark: #4682b4;
-@c_blue_compliment: #70dbdb;
-@c_sandy: #fcfaf3;
-@c_sandy_second: #f2ebdf;
+@c-white: #f3f3f3;
 
-/* Spec Colors */
-@c_light: @c_sandy;
-@c_light_second: multiply(@c_light, @c_second);
-@c_light_third: multiply(@c_light, @c_third);
-@c_med: @c_sandy_second;
-@c_med_second: multiply(@c_med, @c_second);
-@c_med_third: multiply(@c_med, @c_third);
+@c-red: #db6f6f;
+@c-red-light: lighten(@c-red, 5%);
+@c-red-light2: lighten(@c-red, 10%);
+@c-red-dark: darken(@c-red, 15%);
+@c-red-dark2: darken(@c-red, 25%);
 
-/* Links */
-@c_link_main: @c_red;
-@c_link_hover: @c_red_second;
+@c-blue: #70dbdb;
+@c-blue-light: lighten(@c-blue, 5%);
+@c-blue-light2: lighten(@c-blue, 10%);
+@c-blue-dark: darken(@c-blue, 15%);
+@c-blue-dark2: darken(@c-blue, 25%);
+
+@c-grey: #555;
+@c-grey-light: lighten(@c-grey, 20%);
+@c-grey-light2: lighten(@c-grey, 50%);
+@c-grey-dark: darken(@c-grey, 15%);
+
 
 /* Nav Colors */
-@c_navlink_main: @c_blue_dark;
-@c_navlink_bghover: @c_light_second;
-@c_navlink_active: @c_blue;
-@c_navlink_borderlight: @c_blue_third;
-@c_navlink_borderdark: @c_blue_dark;
-@c_navlink_light: @c_light;
+@c-nav: @c-blue;
+@c-nav-light: lighten(@c-nav, 5%);
+@c-nav-light2: lighten(@c-nav, 10%);
+@c-nav-dark: darken(@c-nav, 15%);
+@c-nav-dark2: darken(@c-nav, 25%);
+
+@c-sandy: #fcfaf3;
+@c-sandy_second: #f2ebdf;
+
+/* Spec Colors */
+@c-light: @c-sandy;
+@c-light_second: lighten(@c-light, 5%);
+@c-light_third: lighten(@c-light, 5%);
+@c-med: @c-sandy_second;
+@c-med_second: lighten(@c-med, 5%);
+@c-med_third: lighten(@c-med, 5%);
+
+/* Links */
+@c-link_main: @c-red;
+@c-link_hover: @c-red-dark;
 
 
 
