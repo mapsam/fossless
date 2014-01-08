@@ -90,6 +90,20 @@
   color: #99e5e5;
   border: none;
 }
+.navbar .navbar-toggle,
+.navbar-default .navbar-toggle {
+  border-color: #29a3a3;
+  background-color: #99e5e5;
+  color: #29a3a3;
+}
+.navbar .navbar-toggle .icon-bar,
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #29a3a3;
+}
+.navbar .navbar-toggle:hover,
+.navbar-default .navbar-toggle:hover {
+  background-color: #70dbdb;
+}
 .navbar-nav.navbar-right:last-child {
   margin: 0;
 }
